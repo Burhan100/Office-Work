@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity To-Do (OOP & DSA)</title>
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="app-container">
+        <header>
+            <h1>Mission Control</h1>
+            <p>Powered by Object-Oriented Principles & Max-Heap Priority Queues</p>
+        </header>
+
+        <section class="glass-panel add-task-section">
+            <form id="task-form">
+                <div class="input-group">
+                    <input type="text" id="task-title" placeholder="What needs to be done?" required
+                        autocomplete="off" />
+                </div>
+                <div class="input-group">
+                    <textarea id="task-desc" placeholder="Details (optional)" rows="2"></textarea>
+                </div>
+                <div class="input-row">
+                    <div class="input-group select-wrapper">
+                        <select id="task-priority">
+                            <option value="3">High Priority</option>
+                            <option value="2">Medium Priority</option>
+                            <option value="1" selected>Low Priority</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="primary-btn">Deploy Task</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="lists-container">
+            <section class="list-section">
+                <h2>Pending Tasks</h2>
+                <ul id="pending-list" class="task-list">
+                    <!-- Populated dynamically via app.js -->
+                </ul>
+            </section>
+
+            <section class="list-section">
+                <h2>Completed</h2>
+                <ul id="completed-list" class="task-list">
+                    <!-- Populated dynamically via app.js -->
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
